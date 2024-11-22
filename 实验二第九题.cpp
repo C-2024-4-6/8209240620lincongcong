@@ -1,14 +1,14 @@
 #include<iostream>
+using namespace std;
 int main()
 {
-	int applenumber = 2, day = 0, sumnumber = 0;
-	while (applenumber <= 100)
+	int day = 0, sumnumber = 2, firstnumber = 2;
+	double oneprice = 0.8;
+	while (sumnumber <= 100)
 	{
-		sumnumber += applenumber;
+		firstnumber *= 2;
+		sumnumber += firstnumber;
 		day++;
-		applenumber *= 2;
 	}
-	float price = sumnumber * 0.8;
-	float avgprice = price / day;
-	std::cout << avgprice;
+	cout << "买苹果的平均价格为:" << (sumnumber - firstnumber) * oneprice / day;
 }
