@@ -2,15 +2,18 @@
 using namespace std;
 int main()
 {
-	int arr[10];
-	bool x = true;
-	int diff = 0, num;
+	int arr1[10], arr2[10];
 	for (int i = 0; i < 10; i++)
 	{
-		cin >> num;
+		cin >> arr1[i];
+	}
+	int diff = 0, m = 0;
+	for (int i = 0; i < 10; i++)
+	{
+		bool x = true;
 		for (int j = 0; j < diff; j++)
 		{
-			if (num == arr[j])
+			if (arr2[j] == arr1[i])
 			{
 				x = false;
 				break;
@@ -18,14 +21,12 @@ int main()
 		}
 		if (x)
 		{
-			arr[diff] = num;
-			diff++;
+			arr2[m] = arr1[i];
+			diff++, m++;
 		}
-		x = true;
 	}
 	for (int i = 0; i < diff; i++)
 	{
-		cout << arr[i] << " ";
+		cout << arr2[i] << " ";
 	}
-	cout << endl;
 }

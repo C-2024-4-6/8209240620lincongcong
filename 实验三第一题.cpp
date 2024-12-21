@@ -16,7 +16,7 @@ int main()
 {
 	int a, b, gcd, lcm;
 	cin >> a >> b;
-	x(a, b, gcd, lcm);
-	cout << "最小公倍数是：" << gcd << endl;
-	cout << "最大公因数是：" << lcm << endl;
+	x(a, b, gcd, lcm);//这里可以实现“形参改变实参”
+	cout << "最小公倍数是：" << lcm << endl;
+	cout << "最大公因数是：" << gcd << endl;
 }

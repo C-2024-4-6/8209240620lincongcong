@@ -13,7 +13,5 @@ int func(int day)
 }
 int main()
 {
-	int day = 1;
-	int x = func(day);
-	cout << "猴子第一天摘的桃子数量为：" << x << endl;
+	cout << "猴子第一天摘的桃子数量为：" << func(1) << endl;
 }

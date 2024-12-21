@@ -2,7 +2,11 @@
 using namespace std;
 bool is_prime(int num)
 {
-	if (num == 2)
+	if (num <= 1)
+	{
+		return false;
+	}
+	else if (num == 2)
 	{
 		return true;
 	}
